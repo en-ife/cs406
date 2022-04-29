@@ -1,8 +1,6 @@
-
+<!-- CITATIONS: https://www.w3schools.com/w3css/w3css_templates.asp -->
 
 <!DOCTYPE html>
-
-<!-- CITATIONS: https://www.w3schools.com/w3css/w3css_templates.asp -->
 
 <html lang="en">
 <head>
@@ -11,25 +9,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-quarter img{margin-bottom: -6px; cursor: pointer}
 .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
 </style>
+
 </head>
 <body class="w3-light-grey">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LIBRARY</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+  <a href="#rebels" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Rebels</a> 
+  <a href="#inventors" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Inventors</a> 
+  <a href="#humanitarians" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Humanitarians</a> 
+  <a href="#icons" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Icons</a> 
+  <a href="#search" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Search</a>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SOME NAME</span>
+  <span class="w3-left w3-padding">In Her Steps</span>
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
@@ -42,42 +44,30 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Photo grid -->
   <div class="w3-row w3-grayscale-min">
     <div class="w3-quarter">
-      <img src="Hedy Lamarr.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="Sophie Scoll.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="Vera Atkins.webp" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+      <img src="Hedy Lamarr.jpg" style="width:100%" onclick="onClick(this)" alt="Hedy Lamarr">
+      <img src="Sophie Scoll.jpg" style="width:100%" onclick="onClick(this)" alt="Sophie Scoll.">
+      <img src="Vera Atkins.webp" style="width:100%" onclick="onClick(this)" alt="Vera Atkins">
    </div>
     
    <div class="w3-quarter">
-      <img src="Victoria Woodhull.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="Mildred Harnack.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="Marie Colvin.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="Victoria Woodhull.jpg" style="width:100%" onclick="onClick(this)" alt="Victoria Woodhull">
+      <img src="Mildred Harnack.jpg" style="width:100%" onclick="onClick(this)" alt="Mildred Harnack">
+      <img src="Marie Colvin.jpg" style="width:100%" onclick="onClick(this)" alt="Marie Colvin">
     </div>
     
     <div class="w3-quarter">
-      <img src="Lepa Radic.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="Martha Gellhorn.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="Ruth Bader Ginsburg.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+      <img src="Lepa Radic.jpg" style="width:100%" onclick="onClick(this)" alt="Lepa Radic">
+      <img src="Martha Gellhorn.jpg" style="width:100%" onclick="onClick(this)" alt="Martha Gellhorn">
+      <img src="Ruth Bader Ginsburg.jpg" style="width:100%" onclick="onClick(this)" alt="Ruth Bader Ginsburg">
     </div>
 
     <div class="w3-quarter">
-      <img src="Marie Curie.jpg".jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="Armenian Woman.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="Amelia Earhart.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="Marie Curie.jpg".jpg" style="width:100%" onclick="onClick(this)" alt="Marie Curie">
+      <img src="Armenian Woman.jpg" style="width:100%" onclick="onClick(this)" alt="Armenian Woman">
+      <img src="Amelia Earhart.jpg" style="width:100%" onclick="onClick(this)" alt="Amelia Earhart">
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
@@ -89,8 +79,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- About section -->
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>About Me</b></h4>
-    <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Welcome to the stories of uncommon women.</h4>
       <h4>Rebels</h4>
@@ -98,68 +86,47 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <h4>Humanitarians</h4>
       <h4>Icons</h4>
     
-      <p>Join us to learn about the stories of uncommon women.</p>
+      <p class="w3-wide">Grit</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+
       <hr class="w3-opacity">
-      <h4 class="w3-padding-16">Technical Skills</h4>
-      <p class="w3-wide">Photography</p>
+      <p class="w3-wide">Ambition</p>
       <div class="w3-white">
         <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
       </div>
-      <p class="w3-wide">Web Design</p>
+
+      <hr class="w3-opacity">
+      <p class="w3-wide">Tenacity</p>
       <div class="w3-white">
         <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
       </div>
-      <p class="w3-wide">Photoshop</p>
+
+      <hr class="w3-opacity">
+      <p class="w3-wide">Work Ethic</p>
       <div class="w3-white">
         <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
       </div>
-      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></p>
+
+      <hr class="w3-opacity">
+      <p class="w3-wide">Patience</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:45%">45%</div>
+      </div>
+
+      <p class="w3-wide">Conformity</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:10%">10%</div>
+      </div>
+
       <hr class="w3-opacity">
 
-      <h4 class="w3-padding-16">How much I charge</h4>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">5GB Storage</li>
-            <li class="w3-padding-16">Mail Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">50GB Storage</li>
-            <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 25</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Contact section -->
+  <!-- CONTACT SECTION
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px">
-      <h4 class="w3-center"><b>Contact Me</b></h4>
-      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <h4 class="w3-center"><b>Contact Us</b></h4>
       <form action="/action_page.php" target="_blank">
         <div class="w3-section">
           <label>Name</label>
@@ -176,50 +143,13 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
       </form>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>INFO</h3>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
-      </div>
-    
-      <div class="w3-third">
-        <h3>BLOG POSTS</h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
-          </li>
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
-          </li> 
-        </ul>
-      </div>
-
-      <div class="w3-third">
-        <h3>POPULAR TAGS</h3>
-        <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
-        </p>
-      </div>
-    </div>
-  </footer>
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-<!-- End page content -->
+<!-- PAGE CONTENT ENDS -->
 </div>
 
+
+<!-- SCRIPT -->
 <script>
 // Script to open and close sidebar
 function w3_open() {
@@ -239,10 +169,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 </script>
-
-
 </body>
 </html>
 
