@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!-- Citations 
+  https://en.wikipedia.org/wiki/Maya_Angelou
+  https://en.wikipedia.org/wiki/Anne_Frank
+  https://en.wikipedia.org/wiki/Wangari_Maathai 
+-->
+
+<html lang="en">
+<head>
+<title>Humanitarians</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+
+</head>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a> 
+  <a href="rebels.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Rebels</a> 
+  <a href="inventors.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Inventors</a> 
+  <a href="humanitarians.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Humanitarians</a> 
+  <a href="icons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Icons</a> 
+  <a href="http://flip1.engr.oregonstate.edu:3109/sheroes-database" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Sheroes Database</a>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">In Her Steps</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-half">
+      <img src="Amal Clooney Black and White.jpeg" style="width:100%" onclick="onClick(this)" alt="Amal Clooney is a Lebanese barrister at 
+      Doughty Street Chambers, specialising in international law and human rights. Her clients include Nobel Prize laureate Maria Ressa;  
+      a former President of the Maldives, Mohamed Nasheed, Julian Assange, the founder of WikiLeaks, in his fight against extradition; a 
+      former Prime Minister of Ukraine, Yulia Tymoshenko;  Egyptian-Canadian journalist Mohamed Fahmy;  and Nobel Prize laureate Nadia Murad.">
+      <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="Humanitarians">
+      <img src="Maya Angelou.jpeg" style="width:100%" onclick="onClick(this)" alt="Maya Angelou was an American poet, memoirist, and civil 
+      rights activist. She published seven autobiographies, three books of essays, several books of poetry, and is credited with a list of 
+      plays, movies, and television shows spanning over 50 years. She received dozens of awards and more than 50 honorary degrees.">
+   </div>
+    
+   <div class="w3-half">
+      <img src="Anne Frank.jpeg" style="width:100%" onclick="onClick(this)" alt="Anne Frank was a German-Dutch diarist of Jewish heritage. 
+      One of the most-discussed Jewish victims of the Holocaust, she gained fame posthumously with the 1947 publication of The Diary of a 
+      Young Girl, in which she documents her life in hiding from 1942 to 1944, during the German occupation of the Netherlands in World War 
+      II. It is one of the world's best-known books and has been the basis for several plays and films.">
+      <img src="Malala Yousafzai.jpg" style="width:100%" onclick="onClick(this)" alt="Malala Yousafzai  is a Pakistani activist for female 
+      education and the 2014 Nobel Peace Prize laureate. As a youth advocate, she was nominated for the International Children's Peace Prize 
+      by activist Desmond Tutu. On 9 October 2012, while on a bus in the Swat District, Yousafzai and two other girls were shot by a 
+      Tehrik-i Taliban Pakistan gunman in an assassination attempt in retaliation for her activism. She survived and was later awarded as 
+      the world's youngest Nobel Prize laureate. She is known for human rights advocacy, especially the education of women and 
+      children in her native Swat Valley in Khyber Pakhtunkhwa, northwest Pakistan, where the Tehrik-i-Taliban Pakistan had at times banned 
+      girls from attending school.">
+      <img src="Wangari Maathai.jpeg" style="width:100%" onclick="onClick(this)" alt="Wangari Maathai was a Kenyan social, environmental 
+      and political activist and the first African woman to win the Nobel Peace Prize. She went on to become the first woman in East and 
+      Central Africa to become a Doctor of Philosophy, receiving her PhD from the University of Nairobi in Kenya. In 1977, Maathai founded 
+      the Green Belt Movement, an environmental non-governmental organization focused on the planting of trees, environmental conservation, 
+      and women's rights. In 1984, she was awarded the Right Livelihood Award for 'converting the Kenyan ecological debate into mass action 
+      for reforestation'. Maathai was an elected member of the Parliament of Kenya and between January 2003 and November 2005 served as 
+      assistant minister for environment and natural resources in the government of President Mwai Kibaki.">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Rebels</h4>
+
+      <hr class="w3-opacity">
+      <p class="w3-wide">Tenacity</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+
+      <hr class="w3-opacity">
+      <p class="w3-wide">Patience</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+
+      <p class="w3-wide">Conformity</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:30%">30%</div>
+      </div>
+      <hr class="w3-opacity">
+</div>
+
+
+<!-- SIDEBAR SCRIPT -->
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>
+
